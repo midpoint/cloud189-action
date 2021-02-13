@@ -3,6 +3,8 @@
 
 ***源代码来自：https://51.ruyo.net/16050.html，仅做了一些修改***
 
+**fork自: https://github.com/t00t00-crypto/cloud189-action ,为清理提交历史删掉了仓库重新上传**
+
 ## Github Actions 部署指南
 
 ### 一、Fork 此仓库
@@ -15,24 +17,36 @@
 
 > Settings-->Secrets-->New secret
 
-支持多账号，账号之间与密码之间用 ***#*** 分隔，账号与密码的个数要对应
+![image-20200727142753175](https://i.loli.net/2020/07/27/xjri3p4qdchaf2G.png)支持多账号，账号之间与密码之间用 ***换行*** 分隔，账号与密码的个数要对应
 
-示例：**USER:13800000000#13800000001**，**PWD:cxkjntm#jntmcxk**
-![image-20200727142753175](https://i.loli.net/2020/07/27/xjri3p4qdchaf2G.png)
+示例：
+
+**USER**
+
+>13800000000
+13800000001
+
+**PWD**
+
+>123456
+123123
+
+
+
 
 ### 三、启用 Action
 1. 点击 ***Actions***，再点击 **I understand my workflows, go ahead and enable them**
 
    ![](https://i.loli.net/2020/07/27/pyQmdMHrOIz4x2f.png)
 
-2. 点击左侧的 ***Star***
+2. 点击左侧的 ***Star*** 手动启动
 
    ![image-20200727142617807](https://i.loli.net/2020/07/27/3cXnHYIbOxfQDZh.png)
 
 ### 四、查看运行结果
 > Actions --> 签到 --> build
->
-> 能看到如下图所示，表示成功
+
+能看到如下图所示，表示成功
 
 ![image-20200727144951950](https://i.loli.net/2020/07/27/VbrHu8UJXiIkqGx.png)
 

@@ -23,7 +23,8 @@ jobs:
     - name: 执行签到
       run: |
         echo -n "This IP is: " 
-        curl ifconfig.me
+        curl -s ifconfig.me
+        echo ' '
         
         user='${{ secrets.USER }}'
         pwd='${{ secrets.PWD }}'
@@ -31,7 +32,7 @@ jobs:
         user_list=()
         pwd_list=()
 
-        IFS="#"
+        IFS=$'\n'
 
         for u in ${user[*]}
         do
